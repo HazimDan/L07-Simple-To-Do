@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backky"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/cookie"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:background="@drawable/line"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinnerItems" />
+
+    <EditText
+        android:id="@+id/editTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHighlight="#636363"
+        android:textColorHint="#5A5A5A" />
+
+    <EditText
+        android:id="@+id/editTaskPos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHighlight="#636363"
+        android:textColorHint="#5A5A5A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonAddTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:layout_weight="1"
+                android:text="@string/add" />
+
+            <Button
+                android:id="@+id/buttonRemoveTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:layout_weight="1"
+                android:text="@string/remove" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonUpdateTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/update" />
+
+            <Button
+                android:id="@+id/buttonClearTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:layout_weight="1"
+                android:text="@string/clear" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listTasks"
+        android:background="@drawable/box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

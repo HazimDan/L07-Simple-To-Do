@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aclonica</item>
+        <item>@font/acme</item>
+        <item>@font/alex_brush</item>
+        <item>@font/arizonia</item>
+        <item>@font/astloch_bold</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/butterfly_kids</item>
+        <item>@font/clicker_script</item>
+        <item>@font/cookie</item>
+        <item>@font/dawning_of_a_new_day</item>
+        <item>@font/homemade_apple</item>
+        <item>@font/rouge_script</item>
+        <item>@font/sail</item>
+        <item>@font/vibur</item>
+        <item>@font/zeyada</item>
+    </array>
+</resources>
